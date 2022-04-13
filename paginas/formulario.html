@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Estilizado</title>
+    <style>
+        div{
+            width: 50% ;
+            height: 300px;
+            background-color: bisque;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        /*seletor por elemento*/
+        label {
+            color: cadetblue;
+            font-size: 20px;
+            text-align: center;
+        }
+            /*seletores agrupados --->agrupa vários seletores do mesmo element*/
+            input[type=email],input[type=password], input[type=text]{
+               width: 200px;
+               padding: 12px 20px;
+               margin: 8px 0;
+               display: inline-block;
+               border: 1px solid #ccc;
+               box-sizing: border-box;
+               display: flex;
+               display: inline-block;
+            }
+
+        /*seletor por atributo*/
+        input[type="submit"]{
+            background-color: rgb(31, 143, 16);
+            border: none;
+            color: white;
+            padding: 16px 37px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        /* seletor por elemento*/
+
+           
+            
+    </style>
+
+</head>
+<body>
+    <div>
+    <form action=" "></form>
+    <label for="name">Nome</label>
+    <input type="text" name="Nome">
+    <label for="Email">Email</label>
+    <input type="email" name="Email" id="Email">
+    <label for="senha">Senha</label>
+    <input type="password" name="senha" id="senha">
+    <input type="submit" value="Enviar">
+    <input type="button" value="deixa o like">
+    </div>
+</body>
+</html>
